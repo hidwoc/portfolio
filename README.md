@@ -87,5 +87,7 @@ Ruby Gradient Logo Icon by Icon 54
 <a href="https://iconscout.com/icons/javascript" target="_blank">Javascript Flat Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
 <a href="https://iconscout.com/icons/react" target="_blank">React Flat Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
 <a href="https://iconscout.com/icons/html" target="_blank">Html Flat  Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-54" target="_blank">Icon 54</a>
+Google Icon by Maninder Kaur 
+Excel Icon by Icon Mafia
 
 
