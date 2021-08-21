@@ -47,17 +47,18 @@ src
       |__ graphics
       |__ images
 |__ components/
-      |__ Nav/
-      |__ Main/
-      |__ ProjectDetails/
+      |__ Bio/
+      |__ Contact/
       |__ Footer/
+      |__ Nav/
+      |__ ProjectDetails/
+      |__ Projects/
+      |__ Skills/
 |__ Layout/
 |__ screens/
       |__ Landing/
-      |__ Bio/
-      |__ Skills/
-      |__ Projects/
-      |__ Contact/
+      |__ Login/
+      |__ Main/
 |__ services/
       |__ apiConfig
       |__ admins
@@ -72,7 +73,7 @@ src
 | Day        |                   Components                    |   Status   |
 | ---------- | :---------------------------------------------: | :--------: |
 | Thu Aug 19 |             Plan & Create Wireframe             | Complete |
-| Fri Aug 20 | Set up Backend, Seed Data, Build React Skeleton | Incomplete |
+| Fri Aug 20 | Set up Backend, Seed Data, Build React Skeleton | Complete |
 | Sat Aug 21 |              Render all components              | Incomplete |
 | Sun Aug 22 |           Successful CRUD on Frontend           | Incomplete |
 | Mon Aug 23 |         Deploy to Heroku & Netlfiy, CSS         | Incomplete |
