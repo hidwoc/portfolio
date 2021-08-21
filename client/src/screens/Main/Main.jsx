@@ -8,8 +8,8 @@ const Main = ({ admin, heidi }) => {
   return (
     <div>
       <Bio heidi={heidi}/>
-      <Skills/>
-      <Projects />
+      <Skills skills={heidi.skills}/>
+      <Projects projects={heidi.projects}/>
       <Contact heidi={heidi}/>
     </div>
   );

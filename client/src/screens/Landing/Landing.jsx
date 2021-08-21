@@ -1,11 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Landing = () => {
+const Landing = ({ title }) => {
   return (
     <div>
       <Link to="/login">Login</Link>
-      LANDING
+      <h1>Heidi Choi</h1>
+      <h2>{title}</h2>
     </div>
   );
 };
