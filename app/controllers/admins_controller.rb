@@ -15,10 +15,10 @@ class AdminsController < ApplicationController
   #     render json: admin.errors, status: :unprocessable_entity
   #   end
   # end
-  
+
   # GET /admins/:id
   def show
-    render json: @admin
+    render json: @admin, include: %i[projects skills]
   end
 
   # POST /admins/login
