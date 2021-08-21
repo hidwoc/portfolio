@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div>
-      FOOTER
+      © Heidi Choi 2021
     </div>
   );
 };

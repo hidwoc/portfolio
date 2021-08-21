@@ -10,7 +10,7 @@ Project.destroy_all
 Skill.destroy_all
 Admin.destroy_all
 
-hsc = Admin.create!(username: 'hidwoc', email: 'heidischoi@gmail.com', password: '', title: 'Software Engineer / Fullstack Developer', bio: 'Whether I’m perfecting my kimchi recipe or building a full stack application, I approach each challenge with meticulous planning and creative problem-solving. As a software engineer, I am able to leverage this mindset to create apps that free up our time and energy to pursue what makes us truly happy in life - in my case, a well-balanced lifestyle and the joy of seeing a thoughtfully designed product at work.', linkedin: 'https://www.linkedin.com/in/heidischoi/', resume: '', github: 'https://github.com/hidwoc/portfolio/tree/main', instagram: 'https://www.instagram.com/hidwoc/', facebook: 'https://www.facebook.com/heidi.choi.524', twitter: 'https://twitter.com/hid_woc')
+hsc = Admin.create!(username: 'hidwoc', email: 'heidischoi@gmail.com', password: 'sem97', title: 'Software Engineer / Fullstack Developer', bio: 'Whether I’m perfecting my kimchi recipe or building a full stack application, I approach each challenge with meticulous planning and creative problem-solving. As a software engineer, I am able to leverage this mindset to create apps that free up our time and energy to pursue what makes us truly happy in life - in my case, a well-balanced lifestyle and the joy of seeing a thoughtfully designed product at work.', linkedin: 'https://www.linkedin.com/in/heidischoi/', resume: '', github: 'https://github.com/hidwoc/portfolio/tree/main', instagram: 'https://www.instagram.com/hidwoc/', facebook: 'https://www.facebook.com/heidi.choi.524', twitter: 'https://twitter.com/hid_woc', img: '')
 
 puts "#{Admin.count} admins created"
 
