@@ -37,7 +37,7 @@ function App() {
           <Login setAdmin={setAdmin} />
         </Route>
         <Route exact path="/">
-          <Landing title={heidi.title}/>
+          <Landing />
           <Nav />
           {!heidi ? loading : <Main admin={admin} heidi={heidi}/>}
         </Route>

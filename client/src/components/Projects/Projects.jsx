@@ -1,9 +1,11 @@
-import React from 'react';
+import ProjectDetails from "../ProjectDetails/ProjectDetails";
 
-const Projects = () => {
+const Projects = ({projects}) => {
   return (
     <div>
-      PROJECTS
+      {projects.map(project => (
+        <ProjectDetails key={project.id} project={project} />
+      ))}
     </div>
   );
 };
