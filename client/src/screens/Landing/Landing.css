@@ -1,0 +1,36 @@
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#login {
+  color: var(--background);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1 {
+  color: var(--highlight);
+  font-family: var(--header);
+  font-size: 2.5em;
+  margin: 15px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+#enter {
+  border: 1px solid var(--standard);
+  color: var(--standard);
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin: 30px;
+  text-decoration: none;
+}
+
