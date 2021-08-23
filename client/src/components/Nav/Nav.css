@@ -1,0 +1,24 @@
+#nav-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--highlight);
+  width: 90vw;
+  padding: 5px;
+}
+
+nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  font-family: var(--header);
+}
+
+nav a {
+  color: var(--standard);
+  text-decoration: none;
+}

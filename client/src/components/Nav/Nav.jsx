@@ -1,15 +1,15 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import "./Nav.css"
 
 const Nav = () => {
   return (
     <div id="nav-div">
-      <div>Heidi Choi</div>
+      <div id="logo">Heidi Choi</div>
       <nav>
-        <NavLink to="/about">About Me</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   );
