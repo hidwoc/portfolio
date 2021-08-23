@@ -1,0 +1,37 @@
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 90vh;
+  margin: 50px;
+  padding: 50px;
+}
+
+#about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10px;
+  width: 60%;
+}
+
+#about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  width: 40%;
+} 
+
+#hi {
+  margin: 10px 0;
+}
+
+#bio {
+  line-height: 28px;
+  font-size: 18px;
+}
+
+#about-right img {
+  height: 324px;
+}
