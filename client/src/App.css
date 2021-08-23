@@ -1,3 +1,10 @@
-body {
-  background-color: olive;
+root {
+  /* FONTS */
+  --header: 'Kumar One', cursive;
+  --basic: 'Kameron', serif;
+  /* COLORS */
+  --background: #021619;
+  --highlight: #09814A;
+  --standard: #E5C687;
+  --support: #E5C687;
 }
