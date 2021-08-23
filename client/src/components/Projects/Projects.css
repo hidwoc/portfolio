@@ -1,0 +1,5 @@
+#projects h2 {
+  font-family: var(--header);
+  color: var(--highlight);
+  font-size: 2em;
+}

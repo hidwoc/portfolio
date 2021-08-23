@@ -1,10 +1,18 @@
 #nav-div {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--background);
+}
+
+#sticky-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--highlight);
   width: 90vw;
+  height: 50px;
   padding: 5px;
 }
 

@@ -14,3 +14,7 @@ body {
   color: var(--standard);
   font-family: var(--basic);
 }
+
+.App {
+  position: relative;
+}
