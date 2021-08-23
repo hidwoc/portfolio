@@ -1,6 +1,15 @@
+#layout-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
 .layout-children {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90vw;
 }
