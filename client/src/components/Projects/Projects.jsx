@@ -3,11 +3,13 @@ import "./Projects.css"
 
 const Projects = ({projects}) => {
   return (
-    <div id="projects">
+    <div id="projects-div">
       <h2>Projects</h2>
-      {projects.map(project => (
-        <ProjectDetails key={project.id} project={project} />
-      ))}
+      <div id="projects-container">
+        {projects.map(project => (
+          <ProjectDetails key={project.id} project={project} />
+        ))}
+      </div>
     </div>
   );
 };
