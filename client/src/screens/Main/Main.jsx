@@ -10,7 +10,7 @@ const Main = ({ admin, heidi }) => {
       <Bio heidi={heidi}/>
       <Skills skills={heidi.skills}/>
       <Projects projects={heidi.projects}/>
-      <Contact heidi={heidi}/>
+      <Contact resume={heidi.resume} socials={heidi.socials}/>
     </div>
   );
 };

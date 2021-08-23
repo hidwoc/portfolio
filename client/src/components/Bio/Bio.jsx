@@ -3,8 +3,11 @@ import React from "react";
 const Bio = ({ heidi }) => {
   return (
     <div>
-      <h1>Hi, I'm Heidi</h1>
-      <p>{heidi.bio}</p>
+      <div>
+        <h1>Hi, I'm Heidi</h1>
+        <p>{heidi.bio}</p>
+      </div>
+      <img src={heidi.img} width="300"/>
     </div>
   );
 };

@@ -8,41 +8,246 @@
 
 Project.destroy_all
 Skill.destroy_all
+Social.destroy_all
 Admin.destroy_all
 
-hsc = Admin.create!(username: 'hidwoc', email: 'heidischoi@gmail.com', password: 'sem97', title: 'Software Engineer / Fullstack Developer', bio: 'Whether I’m perfecting my kimchi recipe or building a full stack application, I approach each challenge with meticulous planning and creative problem-solving. As a software engineer, I am able to leverage this mindset to create apps that free up our time and energy to pursue what makes us truly happy in life - in my case, a well-balanced lifestyle and the joy of seeing a thoughtfully designed product at work.', linkedin: 'https://www.linkedin.com/in/heidischoi/', resume: '', github: 'https://github.com/hidwoc/portfolio/tree/main', instagram: 'https://www.instagram.com/hidwoc/', facebook: 'https://www.facebook.com/heidi.choi.524', twitter: 'https://twitter.com/hid_woc', img: '/assets/images/CHOI.HEIDI.Face.jpeg')
+hsc =
+  Admin.create!(
+    username: 'hidwoc',
+    email: 'heidischoi@gmail.com',
+    password: 'sem97',
+    title: 'Software Engineer / Fullstack Developer',
+    bio:
+      'Whether I’m perfecting my kimchi recipe or building a full stack application, I approach each challenge with meticulous planning and creative problem-solving. As a software engineer, I am able to leverage this mindset to create apps that free up our time and energy to pursue what makes us truly happy in life - in my case, a well-balanced lifestyle and the joy of seeing a thoughtfully designed product at work.',
+    resume: '',
+    img: '/assets/images/CHOI.HEIDI.Face.jpeg',
+  )
 
 puts "#{Admin.count} admins created"
 
-js = Skill.create!(name: 'Javascript', category: 'Frontend', icon: '/assets/skills/javascript.svg', admin: hsc)
-react = Skill.create!(name: 'React', category: 'Frontend', icon: '/assets/skills/react.svg', admin: hsc)
-node = Skill.create!(name: 'Node.js', category: 'Frontend', icon: '/assets/skills/nodejs.png', admin: hsc)
-netlify = Skill.create!(name: 'Netlify', category: 'Frontend', icon: '/assets/skills/netlify.svg', admin: hsc)
-html = Skill.create!(name: 'HTML', category: 'Frontend', icon: '/assets/skills/html.svg', admin: hsc)
-airtable = Skill.create!(name: 'Airtable', category: 'Frontend', icon: '/assets/skills/airtable.svg', admin: hsc)
+email =
+  Social.create!(
+    link: 'heidischoi@gmail.com',
+    icon: '/assets/graphics/envelope.svg',
+    admin: hsc,
+  )
+github =
+  Social.create!(
+    link: 'https://github.com/hidwoc',
+    icon: '/assets/graphics/github.svg',
+    admin: hsc,
+  )
+linkedin =
+  Social.create!(
+    link: 'https://www.linkedin.com/in/heidischoi/',
+    icon: '/assets/graphics/linkedin.svg',
+    admin: hsc,
+  )
+instagram =
+  Social.create!(
+    link: 'https://www.instagram.com/hidwoc/',
+    icon: '/assets/graphics/instagram.svg',
+    admin: hsc,
+  )
+twitter =
+  Social.create!(
+    link: 'https://twitter.com/hid_woc',
+    icon: '/assets/graphics/twitter.svg',
+    admin: hsc,
+  )
+facebook =
+  Social.create!(
+    link: 'https://www.facebook.com/heidi.choi.524',
+    icon: '/assets/graphics/facebook.svg',
+    admin: hsc,
+  )
+
+puts "#{Social.count} socials created"
+
+js =
+  Skill.create!(
+    name: 'Javascript',
+    category: 'Frontend',
+    icon: '/assets/skills/javascript.svg',
+    admin: hsc,
+  )
+react =
+  Skill.create!(
+    name: 'React',
+    category: 'Frontend',
+    icon: '/assets/skills/react.svg',
+    admin: hsc,
+  )
+node =
+  Skill.create!(
+    name: 'Node.js',
+    category: 'Frontend',
+    icon: '/assets/skills/nodejs.png',
+    admin: hsc,
+  )
+netlify =
+  Skill.create!(
+    name: 'Netlify',
+    category: 'Frontend',
+    icon: '/assets/skills/netlify.svg',
+    admin: hsc,
+  )
+html =
+  Skill.create!(
+    name: 'HTML',
+    category: 'Frontend',
+    icon: '/assets/skills/html.svg',
+    admin: hsc,
+  )
+airtable =
+  Skill.create!(
+    name: 'Airtable',
+    category: 'Frontend',
+    icon: '/assets/skills/airtable.svg',
+    admin: hsc,
+  )
 axios = Skill.create!(name: 'Axios', category: 'Frontend', icon: '', admin: hsc)
-ruby = Skill.create!(name: 'Ruby', category: 'Backend', icon: '/assets/skills/ruby.svg', admin: hsc)
-rails = Skill.create!(name: 'Rails', category: 'Backend', icon: '/assets/skills/rails.png', admin: hsc)
-mongodb = Skill.create!(name: 'MongoDB', category: 'Backend', icon: '/assets/skills/mongoDB.png', admin: hsc)
-mongoose = Skill.create!(name: 'Mongoose', category: 'Backend', icon: '', admin: hsc)
-express = Skill.create!(name: 'Express', category: 'Backend', icon: '/assets/skills/express.png', admin: hsc)
-insomnia = Skill.create!(name: 'Insomnia', category: 'Backend', icon: '', admin: hsc)
-postman = Skill.create!(name: 'Postman', category: 'Backend', icon: '/assets/skills/postman.svg', admin: hsc)
-heroku = Skill.create!(name: 'Heroku', category: 'Backend', icon: '/assets/skills/heroku.svg', admin: hsc)
-github = Skill.create!(name: 'Github', category: 'Other', icon: '/assets/skills/git.png', admin: hsc)
-excel = Skill.create!(name: 'Microsoft Excel', category: 'Other', icon: '/assets/skills/excel.svg', admin: hsc)
-gsuite = Skill.create!(name: 'GSuite', category: 'Other', icon: '/assets/skills/google.svg', admin: hsc)
-css = Skill.create!(name: 'CSS', category: 'Frontend', icon: '/assets/skills/css.png', admin: hsc)
-sql = Skill.create!(name: 'SQL', category: 'Backend', icon: '/assets/skills/sql.png', admin: hsc)
-postgresql = Skill.create!(name: 'PostgreSQL', category: 'Backend', icon: '/assets/skills/postgresql.png', admin: hsc)
-slack = Skill.create!(name: 'Slack', category: 'Other', icon: '/assets/skills/slack.svg', admin: hsc)
-zoom = Skill.create!(name: 'Zoom', category: 'Other', icon: '/assets/skills/zoom.svg', admin: hsc)
+ruby =
+  Skill.create!(
+    name: 'Ruby',
+    category: 'Backend',
+    icon: '/assets/skills/ruby.svg',
+    admin: hsc,
+  )
+rails =
+  Skill.create!(
+    name: 'Rails',
+    category: 'Backend',
+    icon: '/assets/skills/rails.png',
+    admin: hsc,
+  )
+mongodb =
+  Skill.create!(
+    name: 'MongoDB',
+    category: 'Backend',
+    icon: '/assets/skills/mongoDB.png',
+    admin: hsc,
+  )
+mongoose =
+  Skill.create!(name: 'Mongoose', category: 'Backend', icon: '', admin: hsc)
+express =
+  Skill.create!(
+    name: 'Express',
+    category: 'Backend',
+    icon: '/assets/skills/express.png',
+    admin: hsc,
+  )
+insomnia =
+  Skill.create!(name: 'Insomnia', category: 'Backend', icon: '', admin: hsc)
+postman =
+  Skill.create!(
+    name: 'Postman',
+    category: 'Backend',
+    icon: '/assets/skills/postman.svg',
+    admin: hsc,
+  )
+heroku =
+  Skill.create!(
+    name: 'Heroku',
+    category: 'Backend',
+    icon: '/assets/skills/heroku.svg',
+    admin: hsc,
+  )
+github =
+  Skill.create!(
+    name: 'Github',
+    category: 'Other',
+    icon: '/assets/skills/git.png',
+    admin: hsc,
+  )
+excel =
+  Skill.create!(
+    name: 'Microsoft Excel',
+    category: 'Other',
+    icon: '/assets/skills/excel.svg',
+    admin: hsc,
+  )
+gsuite =
+  Skill.create!(
+    name: 'GSuite',
+    category: 'Other',
+    icon: '/assets/skills/google.svg',
+    admin: hsc,
+  )
+css =
+  Skill.create!(
+    name: 'CSS',
+    category: 'Frontend',
+    icon: '/assets/skills/css.png',
+    admin: hsc,
+  )
+sql =
+  Skill.create!(
+    name: 'SQL',
+    category: 'Backend',
+    icon: '/assets/skills/sql.png',
+    admin: hsc,
+  )
+postgresql =
+  Skill.create!(
+    name: 'PostgreSQL',
+    category: 'Backend',
+    icon: '/assets/skills/postgresql.png',
+    admin: hsc,
+  )
+slack =
+  Skill.create!(
+    name: 'Slack',
+    category: 'Other',
+    icon: '/assets/skills/slack.svg',
+    admin: hsc,
+  )
+zoom =
+  Skill.create!(
+    name: 'Zoom',
+    category: 'Other',
+    icon: '/assets/skills/zoom.svg',
+    admin: hsc,
+  )
 
 puts "#{Skill.count} skills created"
 
-Project.create!(name: "What's For Dinner?", description: 'A health conscious recipe finding app', techstack: "HTML / JS / API", site: 'https://whats-for-dinner-flamingos.netlify.app/', repo: 'https://github.com/hidwoc/Whats-For-Dinner', img: '', admin: hsc)
-Project.create!(name: "JaduFinances", description: 'A small business finance tracking application', techstack: "React / Airtable", site: 'https://jadufinances.netlify.app/', repo: 'https://github.com/hidwoc/jadu-finances', img: '', admin: hsc)
-Project.create!(name: "SPF", description: 'A sunblock ecommerce website built with a team of 3 developers', techstack: "React / MongoDB / Github", site: 'https://spf-sth.netlify.app/', repo: '', img: '', admin: hsc)
-Project.create!(name: "Jadu Mart", description: 'A mock shopping application for my small business that accounts for inventory', techstack: "React / Ruby on Rails", site: 'https://jadumart.netlify.app/', repo: 'https://github.com/hidwoc/jadu-mart/tree/main', img: '', admin: hsc)
+Project.create!(
+  name: "What's For Dinner?",
+  description: 'A health conscious recipe finding app',
+  techstack: 'HTML / JS / API',
+  site: 'https://whats-for-dinner-flamingos.netlify.app/',
+  repo: 'https://github.com/hidwoc/Whats-For-Dinner',
+  img: '',
+  admin: hsc,
+)
+Project.create!(
+  name: 'JaduFinances',
+  description: 'A small business finance tracking application',
+  techstack: 'React / Airtable',
+  site: 'https://jadufinances.netlify.app/',
+  repo: 'https://github.com/hidwoc/jadu-finances',
+  img: '',
+  admin: hsc,
+)
+Project.create!(
+  name: 'SPF',
+  description: 'A sunblock ecommerce website built with a team of 3 developers',
+  techstack: 'React / MongoDB / Github',
+  site: 'https://spf-sth.netlify.app/',
+  repo: '',
+  img: '',
+  admin: hsc,
+)
+Project.create!(
+  name: 'Jadu Mart',
+  description:
+    'A mock shopping application for my small business that accounts for inventory',
+  techstack: 'React / Ruby on Rails',
+  site: 'https://jadumart.netlify.app/',
+  repo: 'https://github.com/hidwoc/jadu-mart/tree/main',
+  img: '',
+  admin: hsc,
+)
 
 puts "#{Project.count} projects created"

@@ -18,7 +18,7 @@ class AdminsController < ApplicationController
 
   # GET /admins/:id
   def show
-    render json: @admin, include: %i[projects skills]
+    render json: @admin, include: %i[projects skills socials]
   end
 
   # POST /admins/login
@@ -74,13 +74,13 @@ class AdminsController < ApplicationController
         :email,
         :password,
         :title,
-        :bio,
-        :linkedin,
-        :resume,
-        :github,
-        :instagram,
-        :facebook,
-        :twitter,
+        # :bio,
+        # :linkedin,
+        # :resume,
+        # :github,
+        # :instagram,
+        # :facebook,
+        # :twitter,
       )
   end
 
