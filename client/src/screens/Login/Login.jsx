@@ -16,7 +16,7 @@ const Login = ({ setAdmin }) => {
     const res = await login(data);
     if (res) {
       setAdmin(res);
-      history.push("/shop");
+      history.push("/");
     } else {
       console.log("invalid credentials");
       // TODO: render "invalid credentials" message
@@ -25,6 +25,7 @@ const Login = ({ setAdmin }) => {
 
   return (
     <div className="login">
+      <button onClick={() => history.push("/")}>Back</button>
       <h2 id="welcome-admin">Welcome Admin!</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-div">
