@@ -1,8 +1,10 @@
 import React from "react";
+import "./Skills.css"
 
 const Skills = ({ skills }) => {
   return (
-    <div>
+    <div id="skills-div">
+      <div className="section-header">Skills</div>
       <div className="skills fullstack" id="frontend">
         {skills
           // .filter((skill) => {
@@ -10,7 +12,7 @@ const Skills = ({ skills }) => {
           // })
           .map((skill) => (
             <div key={skill.id}>
-              <img src={skill.icon} width="100"/>
+              <img src={skill.icon} width="75"/>
               <p>{skill.name}</p>
             </div>
           ))}
