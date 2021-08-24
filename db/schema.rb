@@ -23,12 +23,7 @@ ActiveRecord::Schema.define(version: 2021_08_23_011533) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "title"
     t.string "bio"
-    t.string "linkedin"
     t.string "resume"
-    t.string "github"
-    t.string "instagram"
-    t.string "facebook"
-    t.string "twitter"
     t.string "img"
   end
 
