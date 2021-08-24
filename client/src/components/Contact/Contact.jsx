@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { handleChange } from "../../utils/helpers";
-import "./Contact.css"
+import "./Contact.css";
 
 // TODO resume link
 // TODO email link
@@ -20,22 +20,29 @@ const Contact = ({ resume, socials }) => {
   return (
     <div id="contact-div">
       <h2 className="section-header">Contact</h2>
-      <Link to={{ pathname: { resume } }} target="_blank">
-        <button>View Resume</button>
-      </Link>
-      <div className="socials">
-        {socials.map((social) => (
-          <Link to={{ pathname: social.link }} target="_blank" key={social.id}>
-            <img
-              id={social.id}
-              src={social.icon}
-              alt="social icon"
-              width="30"
-            />
-          </Link>
-        ))}
+      <div className="contact-left">
+        <Link to={{ pathname: resume }} target="_blank">
+          View Resume
+        </Link>
+        <div className="socials">
+          {socials.map((social) => (
+            <Link
+              to={{ pathname: social.link }}
+              target="_blank"
+              key={social.id}
+            >
+              <img
+                id={social.id}
+                src={social.icon}
+                alt="social icon"
+                width="35"
+              />
+            </Link>
+          ))}
+        </div>
       </div>
-      <div>
+      <div className="contact-right">
+        Want to chat? Send me a message!
         <form onSubmit={handleSubmit}>
           <input
             type="text"

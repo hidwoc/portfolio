@@ -1,0 +1,64 @@
+#contact-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  font-size: 1.2em;
+}
+
+#contact-div h2 {
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  width: 40%;
+}
+
+.contact-left>a {
+  border: 1px solid var(--standard);
+  color: var(--standard);
+  text-decoration: none;
+  margin: 0 auto 50px;
+  padding: 15px;
+}
+
+.socials {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 25px auto;
+}
+
+.contact-right {
+  margin-top: 50px;
+  text-align: center;
+  width: 60%;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 30px;
+}
+
+.contact-right form input {
+  width: 100%;
+}
+
+.contact-right form textarea {
+  width: 100%;
+}

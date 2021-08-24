@@ -8,7 +8,7 @@ const ProjectDetails = ({ project }) => {
     <div className="project-details">
       <div className="project-img">
         {/* <img src={img} alt={name} width='300'/> */}
-        <video width="350" controls >
+        <video width="400" controls >
           <source src={img}/>
         </video>
         </div>

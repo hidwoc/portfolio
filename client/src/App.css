@@ -25,3 +25,30 @@ body {
   font-size: 2em;
   margin: 10px;
 }
+
+form input {
+  background-color: var(--support);
+  caret-color: var(--highlight);
+  color: var(--background);
+  font-family: var(--basic);
+  margin: 10px;
+  padding: 10px;
+}
+
+form textarea {
+  background-color: var(--support);
+  caret-color: var(--highlight);
+  color: var(--background);
+  font-family: var(--basic);
+  margin: 10px;
+  padding: 10px;
+}
+
+form button {
+  background-color: var(--background);
+  border: 1px solid var(--standard);
+  color: var(--standard);
+  font-family: var(--basic);
+  margin: 20px;
+  padding: 10px 20px;
+}
