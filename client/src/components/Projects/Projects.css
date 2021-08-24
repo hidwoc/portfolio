@@ -3,13 +3,6 @@
   border-bottom: 1px solid var(--highlight);
 }
 
-#projects-div h2 {
-  font-family: var(--header);
-  color: var(--highlight);
-  font-size: 2em;
-  margin: 10px;
-}
-
 #projects-container {
   display: flex;
   flex-direction: column;

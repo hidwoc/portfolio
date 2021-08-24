@@ -6,7 +6,12 @@ const ProjectDetails = ({ project }) => {
 
   return (
     <div className="project-details">
-      <div className="project-img">{img}</div>
+      <div className="project-img">
+        {/* <img src={img} alt={name} width='300'/> */}
+        <video width="350" controls >
+          <source src={img}/>
+        </video>
+        </div>
       <div className="project-info">
         <p className="project-name">{name}</p>
         <p className="project-techstack">{techstack}</p>

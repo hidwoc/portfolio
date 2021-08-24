@@ -19,12 +19,11 @@ hsc =
     title: 'Software Engineer / Fullstack Developer',
     bio:
       'Whether I’m perfecting my kimchi recipe or building a full stack application, I approach each challenge with meticulous planning and creative problem-solving. As a software engineer, I am able to leverage this mindset to create apps that free up our time and energy to pursue what makes us truly happy in life - in my case, a well-balanced lifestyle and the joy of seeing a thoughtfully designed product at work.',
-    resume: '',
+    resume: 'https://docs.google.com/document/d/1524Tci-_-r1fvdBa0-ZcNqS4hT_5p20hLgivBYXWpxo/edit?usp=sharing',
     img: '/assets/images/CHOI.HEIDI.Face.jpeg',
   )
 
 puts "#{Admin.count} admins created"
-
 email =
   Social.create!(
     link: 'heidischoi@gmail.com',
@@ -218,7 +217,7 @@ Project.create!(
   techstack: 'HTML / JS / API',
   site: 'https://whats-for-dinner-flamingos.netlify.app/',
   repo: 'https://github.com/hidwoc/Whats-For-Dinner',
-  img: '',
+  img: '/assets/videos/WhatsForDinner.mov',
   admin: hsc,
 )
 Project.create!(
@@ -227,7 +226,7 @@ Project.create!(
   techstack: 'React / Airtable',
   site: 'https://jadufinances.netlify.app/',
   repo: 'https://github.com/hidwoc/jadu-finances',
-  img: '',
+  img: '/assets/videos/JaduFinances.mov',
   admin: hsc,
 )
 Project.create!(
@@ -236,7 +235,7 @@ Project.create!(
   techstack: 'React / MongoDB / Github',
   site: 'https://spf-sth.netlify.app/',
   repo: '',
-  img: '',
+  img: '/assets/videos/SPF.mov',
   admin: hsc,
 )
 Project.create!(
@@ -246,7 +245,7 @@ Project.create!(
   techstack: 'React / Ruby on Rails',
   site: 'https://jadumart.netlify.app/',
   repo: 'https://github.com/hidwoc/jadu-mart/tree/main',
-  img: '',
+  img: '/assets/videos/JaduMart.mov',
   admin: hsc,
 )
 

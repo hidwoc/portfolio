@@ -18,3 +18,10 @@ body {
 .App {
   position: relative;
 }
+
+.section-header {
+  font-family: var(--header);
+  color: var(--highlight);
+  font-size: 2em;
+  margin: 10px;
+}

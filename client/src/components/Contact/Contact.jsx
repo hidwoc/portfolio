@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { handleChange } from "../../utils/helpers";
+import "./Contact.css"
 
 // TODO resume link
 // TODO email link
@@ -13,13 +14,12 @@ const Contact = ({ resume, socials }) => {
   });
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-
-  }
+    e.preventDefault();
+  };
 
   return (
-    <div>
-      CONTACT
+    <div id="contact-div">
+      <h2 className="section-header">Contact</h2>
       <Link to={{ pathname: { resume } }} target="_blank">
         <button>View Resume</button>
       </Link>
