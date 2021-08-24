@@ -32,8 +32,9 @@
   justify-content: space-evenly;
   /* width:  */
 }
-.project-links #github {
-  fill: var(--standard);
+
+.link-logo {
+  margin: 10px;
 }
 .project-description {
   text-align: center;

@@ -13,15 +13,16 @@ const ProjectDetails = ({ project }) => {
         <div className="project-links">
           <Link to={{ pathname: repo }} target="_blank">
             <img
+              className="link-logo"
               id="github"
               src={`${process.env.PUBLIC_URL}/assets/graphics/github.svg`}
               alt="github logo"
               width="20"
-              style={{fill: "white"}}
             />
           </Link>
           <Link to={{ pathname: site }} target="_blank">
             <img
+              className="link-logo"
               id="linkedin"
               src={`${process.env.PUBLIC_URL}/assets/graphics/external-link.svg`}
               alt="external link logo"
