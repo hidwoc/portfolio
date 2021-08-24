@@ -233,8 +233,8 @@ Project.create!(
   name: 'SPF',
   description: 'A sunblock ecommerce website built with a team of 3 developers',
   techstack: 'React / MongoDB / Github',
-  site: 'https://spf-sth.netlify.app/',
-  repo: '',
+  site: 'https://spf-hidwoc.netlify.app/',
+  repo: 'https://github.com/hidwoc/SPF/tree/main',
   img: '/assets/videos/SPF.mov',
   admin: hsc,
 )
