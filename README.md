@@ -4,6 +4,10 @@
 
 _Personal portfolio website showcasing my software engineering projects, technical skills, professional bio, resume and contact info_
 
+# Deployed Links
+
+https://portfolio-hidwoc.herokuapp.com/
+
 # MVP
 
 ## Front End
