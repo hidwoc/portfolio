@@ -1,6 +1,13 @@
 #projects-div {
   padding-top: 70px;
   border-bottom: 1px solid var(--highlight);
+  position: relative;
+}
+
+#projects-div h2 {
+  position: absolute;
+  top: 70px;
+  left: 0;
 }
 
 #projects-container {
@@ -9,4 +16,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 860px) {
+  #projects-div {
+    max-width: 85%;
+  }
 }
