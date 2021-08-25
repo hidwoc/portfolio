@@ -45,3 +45,9 @@
   text-align: center;
   width: 60%;
 }
+
+@media screen and (max-width: 860px) {
+  #contact-div {
+    max-width: 85%;
+  }
+}
