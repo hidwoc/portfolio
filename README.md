@@ -40,7 +40,7 @@ https://portfolio-hidwoc.herokuapp.com/
 - Admins
 - Projects
 - Skills
-- Books
+- Messages
 - Deploy to Heroku
 
 # Component Architecture
@@ -80,26 +80,30 @@ src
 | Fri Aug 20 | Set up Backend, Seed Data, Build React Skeleton | Complete |
 | Sat Aug 21 |              Render all components              | Complete |
 | Sun Aug 22 |           Successful CRUD on Frontend           | Incomplete |
-| Mon Aug 23 |         Deploy to Heroku & Netlfiy, CSS         | Incomplete |
-| Tue Aug 24 |                  Advanced CSS                   | Incomplete |
-| Wed Aug 25 |              Submit MVP Portfolio               | Incomplete |
+| Mon Aug 23 |         Deploy to Heroku & Netlfiy, CSS         | Complete |
+| Tue Aug 24 |                  Advanced CSS                   | Complete |
+| Wed Aug 25 |              Submit MVP Portfolio               | Complete |
 
 # Resources
 
-- Social logos from https://fontawesome.com/
-<a href="https://iconscout.com/icons/ruby" target="_blank">Ruby Gradient  Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-54">Icon 54</a> on <a href="https://iconscout.com">Iconscout</a>
-Ruby Gradient Logo Icon by Icon 54
-<a href="https://iconscout.com/icons/javascript" target="_blank">Javascript Flat Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
-<a href="https://iconscout.com/icons/react" target="_blank">React Flat Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
-<a href="https://iconscout.com/icons/html" target="_blank">Html Flat  Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-54" target="_blank">Icon 54</a>
-Google Icon by Thanga Vignesh P
-Excel Icon by Icon Mafia
-Netlify Icon by Icon 54
-Heroku Icon by Icon 54
-Postman Icon by Icon 54 on Iconscout
-Airtable Icon by Icon Mafia
-Slack Icon by Icon 54
-Zoom Icon by Enamo Studios
+- Social logos from [Font Awesome](https://fontawesome.com/)
+
+- Other icons from [Iconscout](https://iconscout.com/)
+
+- Icon 54
+  - Ruby Gradient Logo Icon
+  - Netlify Icon
+  - Heroku Icon
+  - Postman Icon
+  - Slack Icon
+- Icon Mafia
+  - Excel Icon
+  - Airtable Icon
+  - Javascript Flat Icon
+  - React Flat Icon
+  - Html Flat Logo Icon
+- Google Icon by Thanga Vignesh P
+- Zoom Icon by Enamo Studios
 
 
 
