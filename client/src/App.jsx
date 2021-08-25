@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
+import Inbox from "./screens/Inbox/Inbox";
 import Landing from "./screens/Landing/Landing";
 import Login from "./screens/Login/Login";
 import Main from "./screens/Main/Main";
@@ -37,9 +38,12 @@ function App() {
           <Login setAdmin={setAdmin} />
         </Route>
         <Route exact path="/">
-          <Landing/>
-          <Nav admin={admin}/>
-          {!heidi ? loading : <Main admin={admin} heidi={heidi}/>}
+          <Landing />
+          <Nav admin={admin} />
+          {!heidi ? loading : <Main admin={admin} heidi={heidi} />}
+        </Route>
+        <Route path="/inbox">
+          <Inbox />
         </Route>
       </Layout>
     </div>
