@@ -1,11 +1,12 @@
 #skills-div {
   padding-top: 140px;
+  padding-bottom: 30px;
   border-bottom: 1px solid var(--highlight);
   position: relative;
-  display: grid;
-  grid-template-areas: 
-  "A B"
-  "C C";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #skills-div h2 {
@@ -16,14 +17,32 @@
 
 .skills {
   text-align: center;
+  border: 1px solid var(--highlight);
+  margin: 10px;
+  padding: 15px;
 }
 
-.fullstack {
+.skills h4 {
+  font-size: 1.3em;
+}
+.fullstack-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-evenly;
+}
+.fullstack-icons {
   display: grid;
-  grid-template-areas: 
-  ". H ."
-  "A B C"
-  "E F G";
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
+}
+
+.other-icons {
+  /* width: 100%; */
+  grid-area: C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 .skill-icon img {

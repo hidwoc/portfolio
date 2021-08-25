@@ -105,7 +105,7 @@ airtable =
     icon: '/assets/skills/airtable.svg',
     admin: hsc,
   )
-axios = Skill.create!(name: 'Axios', category: 'Frontend', icon: '', admin: hsc)
+# axios = Skill.create!(name: 'Axios', category: 'Frontend', icon: '', admin: hsc)
 ruby =
   Skill.create!(
     name: 'Ruby',
@@ -127,8 +127,8 @@ mongodb =
     icon: '/assets/skills/mongoDB.png',
     admin: hsc,
   )
-mongoose =
-  Skill.create!(name: 'Mongoose', category: 'Backend', icon: '', admin: hsc)
+# mongoose =
+#   Skill.create!(name: 'Mongoose', category: 'Backend', icon: '', admin: hsc)
 express =
   Skill.create!(
     name: 'Express',
@@ -136,8 +136,8 @@ express =
     icon: '/assets/skills/express.png',
     admin: hsc,
   )
-insomnia =
-  Skill.create!(name: 'Insomnia', category: 'Backend', icon: '', admin: hsc)
+# insomnia =
+#   Skill.create!(name: 'Insomnia', category: 'Backend', icon: '', admin: hsc)
 postman =
   Skill.create!(
     name: 'Postman',
