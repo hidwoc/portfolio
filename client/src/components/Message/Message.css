@@ -14,3 +14,10 @@
 .contact-right form textarea {
   width: 100%;
 }
+
+@media screen and (max-width: 500px) {
+  .contact-right form {
+    margin: 10px auto;
+    padding: 0 10px 10px;
+  }
+}
