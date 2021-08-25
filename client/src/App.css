@@ -52,3 +52,9 @@ form button {
   margin: 20px;
   padding: 10px 20px;
 }
+
+@media screen and (max-width:771px) {
+  body {
+    font-size: .75em;
+  }
+}
