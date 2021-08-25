@@ -56,14 +56,15 @@
 @media screen and (max-width: 650px) {
   .project-details {
     flex-direction: column;
+    width: 90%;
   }
 
   .project-img {
-    width: 60%;
+    width: 70%;
   }
 
   .project-info {
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
   }
 }
