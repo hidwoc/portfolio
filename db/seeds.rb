@@ -19,7 +19,8 @@ hsc =
     title: 'Software Engineer / Fullstack Developer',
     bio:
       'Whether I’m perfecting my kimchi recipe or building a full stack application, I approach each challenge with meticulous planning and creative problem-solving. As a software engineer, I am able to leverage this mindset to create apps that free up our time and energy to pursue what makes us truly happy in life - in my case, a well-balanced lifestyle and the joy of seeing a thoughtfully designed product at work.',
-    resume: 'https://docs.google.com/document/d/1524Tci-_-r1fvdBa0-ZcNqS4hT_5p20hLgivBYXWpxo/edit?usp=sharing',
+    resume:
+      'https://docs.google.com/document/d/1524Tci-_-r1fvdBa0-ZcNqS4hT_5p20hLgivBYXWpxo/edit?usp=sharing',
     img: '/assets/images/CHOI.HEIDI.Face.jpeg',
   )
 
@@ -63,13 +64,6 @@ facebook =
 
 puts "#{Social.count} socials created"
 
-js =
-  Skill.create!(
-    name: 'Javascript',
-    category: 'Frontend',
-    icon: '/assets/skills/javascript.svg',
-    admin: hsc,
-  )
 react =
   Skill.create!(
     name: 'React',
@@ -84,11 +78,11 @@ node =
     icon: '/assets/skills/nodejs.png',
     admin: hsc,
   )
-netlify =
+js =
   Skill.create!(
-    name: 'Netlify',
+    name: 'Javascript',
     category: 'Frontend',
-    icon: '/assets/skills/netlify.svg',
+    icon: '/assets/skills/javascript.svg',
     admin: hsc,
   )
 html =
@@ -96,6 +90,20 @@ html =
     name: 'HTML',
     category: 'Frontend',
     icon: '/assets/skills/html.svg',
+    admin: hsc,
+  )
+css =
+  Skill.create!(
+    name: 'CSS',
+    category: 'Frontend',
+    icon: '/assets/skills/css.png',
+    admin: hsc,
+  )
+netlify =
+  Skill.create!(
+    name: 'Netlify',
+    category: 'Frontend',
+    icon: '/assets/skills/netlify.svg',
     admin: hsc,
   )
 airtable =
@@ -106,13 +114,6 @@ airtable =
     admin: hsc,
   )
 # axios = Skill.create!(name: 'Axios', category: 'Frontend', icon: '', admin: hsc)
-ruby =
-  Skill.create!(
-    name: 'Ruby',
-    category: 'Backend',
-    icon: '/assets/skills/ruby.svg',
-    admin: hsc,
-  )
 rails =
   Skill.create!(
     name: 'Rails',
@@ -138,11 +139,25 @@ express =
   )
 # insomnia =
 #   Skill.create!(name: 'Insomnia', category: 'Backend', icon: '', admin: hsc)
-postman =
+ruby =
   Skill.create!(
-    name: 'Postman',
+    name: 'Ruby',
     category: 'Backend',
-    icon: '/assets/skills/postman.svg',
+    icon: '/assets/skills/ruby.svg',
+    admin: hsc,
+  )
+sql =
+  Skill.create!(
+    name: 'SQL',
+    category: 'Backend',
+    icon: '/assets/skills/sql.png',
+    admin: hsc,
+  )
+postgresql =
+  Skill.create!(
+    name: 'PostgreSQL',
+    category: 'Backend',
+    icon: '/assets/skills/postgresql.png',
     admin: hsc,
   )
 heroku =
@@ -150,6 +165,13 @@ heroku =
     name: 'Heroku',
     category: 'Backend',
     icon: '/assets/skills/heroku.svg',
+    admin: hsc,
+  )
+postman =
+  Skill.create!(
+    name: 'Postman',
+    category: 'Backend',
+    icon: '/assets/skills/postman.svg',
     admin: hsc,
   )
 github =
@@ -173,27 +195,6 @@ gsuite =
     icon: '/assets/skills/google.svg',
     admin: hsc,
   )
-css =
-  Skill.create!(
-    name: 'CSS',
-    category: 'Frontend',
-    icon: '/assets/skills/css.png',
-    admin: hsc,
-  )
-sql =
-  Skill.create!(
-    name: 'SQL',
-    category: 'Backend',
-    icon: '/assets/skills/sql.png',
-    admin: hsc,
-  )
-postgresql =
-  Skill.create!(
-    name: 'PostgreSQL',
-    category: 'Backend',
-    icon: '/assets/skills/postgresql.png',
-    admin: hsc,
-  )
 slack =
   Skill.create!(
     name: 'Slack',
@@ -213,8 +214,9 @@ puts "#{Skill.count} skills created"
 
 Project.create!(
   name: "What's For Dinner?",
-  description: 'A health conscious recipe finding app',
-  techstack: 'HTML / JS / API',
+  description:
+    'An application for the health conscious, yet underprepared home cook that consumes a third-party API that matches recipes with ingredients on hand. Calculates calories and nutritional value for a single serving.',
+  techstack: 'HTML / CSS / JS / Edamam API',
   site: 'https://whats-for-dinner-flamingos.netlify.app/',
   repo: 'https://github.com/hidwoc/Whats-For-Dinner',
   img: '/assets/videos/WhatsForDinner.mov',
@@ -222,8 +224,9 @@ Project.create!(
 )
 Project.create!(
   name: 'JaduFinances',
-  description: 'A small business finance tracking application',
-  techstack: 'React / Airtable',
+  description:
+    'Finance tracking application for my small business. Displays expenses and sales by month as a table and a donut chart.',
+  techstack: 'React / React Chart.js / Airtable API',
   site: 'https://jadufinances.netlify.app/',
   repo: 'https://github.com/hidwoc/jadu-finances',
   img: '/assets/videos/JaduFinances.mov',
@@ -231,7 +234,8 @@ Project.create!(
 )
 Project.create!(
   name: 'SPF',
-  description: 'A sunblock ecommerce website built with a team of 3 developers',
+  description:
+    'Fullstack ecommerce website for sunblocks built with a team of 3 developers with full CRUD functionality and authentication.',
   techstack: 'React / MongoDB / Github',
   site: 'https://spf-hidwoc.netlify.app/',
   repo: 'https://github.com/hidwoc/SPF/tree/main',
@@ -241,7 +245,7 @@ Project.create!(
 Project.create!(
   name: 'Jadu Mart',
   description:
-    'A mock shopping application for my small business that accounts for inventory',
+    'Fullstack shopping application with full CRUD functionality and authentication that updates inventory when orders are placed and conditionally renders options when an admin user is logged in.',
   techstack: 'React / Ruby on Rails',
   site: 'https://jadumart.netlify.app/',
   repo: 'https://github.com/hidwoc/jadu-mart/tree/main',
