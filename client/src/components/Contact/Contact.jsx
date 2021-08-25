@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import Message from "../Message/Message"
+import Message from "../Message/Message";
 import "./Contact.css";
 
 // TODO email link
 const Contact = ({ resume, socials }) => {
+  const email = socials[0]
 
   return (
     <div id="contact-div">
@@ -13,7 +14,16 @@ const Contact = ({ resume, socials }) => {
           View Resume
         </Link>
         <div className="socials">
-          {socials.map((social) => (
+          <a href={`mailto: ${email.link}`} target="_blank" key={email.id}>
+            <img
+              id={email.id}
+              src={email.icon}
+              alt="email icon"
+              width="35"
+            />
+          </a>
+          {socials.filter(social => social.link != "heidischoi@gmail.com")
+          .map((social) => (
             <Link
               to={{ pathname: social.link }}
               target="_blank"
