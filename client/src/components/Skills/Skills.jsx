@@ -5,7 +5,6 @@ const Skills = ({ skills }) => {
   return (
     <div id="skills-div">
       <h2 className="section-header">Skills</h2>
-      <div className="fullstack-container">
         <div className="skills fullstack" id="frontend">
           <h4>Frontend</h4>
           <div className="fullstack-icons">
@@ -32,7 +31,6 @@ const Skills = ({ skills }) => {
               ))}
           </div>
         </div>
-      </div>
       <div className="skills" id="other">
         <h4>Other</h4>
         <div className="other-icons">
