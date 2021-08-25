@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { login } from "../../services/admins";
 import { handleChange } from "../../utils/helpers";
-// import "./Login.css";
+import "./Login.css";
 
 const Login = ({ setAdmin }) => {
   const [data, setData] = useState({

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Message from "../Message/Message";
 import "./Contact.css";
 
-// TODO email link
 const Contact = ({ resume, socials }) => {
   const email = socials[0]
 
