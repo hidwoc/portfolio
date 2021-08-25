@@ -1,7 +1,7 @@
 import React from "react";
 import "./Bio.css";
 
-const Bio = ({ heidi }) => {
+const Bio = ({ heidi, admin }) => {
   return (
     <div id="about-div">
       <div id="about-left">

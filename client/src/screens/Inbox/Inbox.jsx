@@ -3,6 +3,8 @@ import { useHistory } from "react-router";
 import { deleteMessage, getAllMessages } from "../../services/messages";
 import "./Inbox.css";
 
+// TODO Confirm before deleting message
+
 const Inbox = () => {
   const [messages, setMessages] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(true);

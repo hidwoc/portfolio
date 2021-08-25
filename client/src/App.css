@@ -51,6 +51,32 @@ button {
   font-family: var(--basic);
   margin: 20px;
   padding: 10px 20px;
+  transition-duration: .5s;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: var(--highlight);
+  /* font-size: 1.1em; */
+  /* transform: scale(1.05) */
+}
+
+button:active {
+  color: var(--highlight);
+  background-color: var(--support);
+}
+
+.link-button {
+  transition-duration: .5s;
+}
+
+.link-button:hover {
+  background-color: var(--highlight);
+}
+
+.link-button:active {
+  color: var(--highlight);
+  background-color: var(--support);
 }
 
 @media screen and (max-width:771px) {

@@ -9,7 +9,7 @@ const Contact = ({ resume, socials }) => {
     <div id="contact-div">
       <h2 className="section-header">Contact</h2>
       <div className="contact-left">
-        <Link to={{ pathname: resume }} target="_blank">
+        <Link className="link-button" to={{ pathname: resume }} target="_blank">
           View Resume
         </Link>
         <div className="socials">
@@ -21,7 +21,7 @@ const Contact = ({ resume, socials }) => {
               width="35"
             />
           </a>
-          {socials.filter(social => social.link != "heidischoi@gmail.com")
+          {socials.filter(social => social.link !== "heidischoi@gmail.com")
           .map((social) => (
             <Link
               to={{ pathname: social.link }}
