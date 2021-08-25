@@ -1,21 +1,9 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { handleChange } from "../../utils/helpers";
+import Message from "../Message/Message"
 import "./Contact.css";
 
-// TODO resume link
 // TODO email link
-// TODO message onSubmit?
 const Contact = ({ resume, socials }) => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
 
   return (
     <div id="contact-div">
@@ -42,31 +30,7 @@ const Contact = ({ resume, socials }) => {
         </div>
       </div>
       <div className="contact-right">
-        Want to chat? Send me a message!
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            onChange={(e) => handleChange(e, form, setForm)}
-          />
-          <input
-            type="text"
-            placeholder="Your Email"
-            name="email"
-            onChange={(e) => handleChange(e, form, setForm)}
-          />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            name="message"
-            onChange={(e) => handleChange(e, form, setForm)}
-          ></textarea>
-          <button>Submit</button>
-        </form>
+        <Message />
       </div>
     </div>
   );

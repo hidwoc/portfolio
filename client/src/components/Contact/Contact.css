@@ -36,7 +36,7 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 25px;
   margin: 25px auto;
 }
 
@@ -44,21 +44,4 @@
   margin-top: 50px;
   text-align: center;
   width: 60%;
-}
-
-.contact-right form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
-  padding: 30px;
-}
-
-.contact-right form input {
-  width: 100%;
-}
-
-.contact-right form textarea {
-  width: 100%;
 }

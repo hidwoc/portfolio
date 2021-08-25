@@ -1,0 +1,16 @@
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 30px;
+}
+
+.contact-right form input {
+  width: 100%;
+}
+
+.contact-right form textarea {
+  width: 100%;
+}

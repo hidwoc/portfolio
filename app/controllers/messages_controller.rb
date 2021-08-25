@@ -24,7 +24,7 @@ class MessagesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /messages/1
+  # PUT /messages/1
   def update
     if @message.update(message_params)
       render json: @message
