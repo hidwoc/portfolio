@@ -9,31 +9,45 @@ const Login = ({ setAdmin }) => {
     email: "",
     password: "",
   });
+  const [buttonMessage, setButtonMessage] = useState("Login");
   const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await login(data);
     if (res) {
+      setButtonMessage("What's up Heidi✨")
       setAdmin(res);
-      history.push("/");
+      setTimeout(() => {
+        setButtonMessage("Login")
+        history.push("/");
+      }, 1500)
     } else {
-      console.log("invalid credentials");
-      // TODO: render "invalid credentials" message
+      setButtonMessage("Invalid Credentials");
+      setTimeout(() => {
+        setData({
+          email: "",
+          password: "",
+        });
+        setButtonMessage("Login");
+      }, 1500);
     }
   };
 
   return (
     <div className="login">
-      <button id="leave-login" onClick={() => history.push("/")}>Back</button>
+      <button id="leave-login" onClick={() => history.push("/")}>
+        Back
+      </button>
       <h2>Welcome Admin!</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-div">
           <label htmlFor="email">Email:</label>
           <input
             id="email"
-            type="text"
+            type="email"
             name="email"
+            value={data.email}
             onChange={(e) => handleChange(e, data, setData)}
             autoFocus
           />
@@ -44,10 +58,11 @@ const Login = ({ setAdmin }) => {
             id="password"
             type="password"
             name="password"
+            value={data.password}
             onChange={(e) => handleChange(e, data, setData)}
           />
         </div>
-        <button id="login">Login</button>
+        <button id="login">{buttonMessage}</button>
       </form>
     </div>
   );
