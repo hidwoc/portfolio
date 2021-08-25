@@ -26,7 +26,7 @@ const Login = ({ setAdmin }) => {
   return (
     <div className="login">
       <button id="leave-login" onClick={() => history.push("/")}>Back</button>
-      <h2 id="welcome-admin">Welcome Admin!</h2>
+      <h2>Welcome Admin!</h2>
       <form onSubmit={handleSubmit}>
         <div className="input-div">
           <label htmlFor="email">Email:</label>
