@@ -36,7 +36,7 @@ const Login = ({ setAdmin }) => {
 
   return (
     <div className="login">
-      <button id="leave-login" onClick={() => history.push("/")}>
+      <button className="back" onClick={() => history.push("/")}>
         Back
       </button>
       <h2>Welcome Admin!</h2>

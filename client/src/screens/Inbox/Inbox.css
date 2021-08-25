@@ -1,0 +1,24 @@
+#inbox-div {
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.sender {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.message-message {
+  line-height: 1.4em;
+}
+
+
