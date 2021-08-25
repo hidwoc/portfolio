@@ -54,8 +54,7 @@ const Message = () => {
           require
         />
         <textarea
-          name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="Your Message"

@@ -9,7 +9,7 @@ const Bio = ({ heidi }) => {
         <p id="bio">{heidi.bio}</p>
       </div>
       <div id="about-right">
-        <img src={heidi.img} />
+        <img src={heidi.img} alt="Heidi Choi" />
       </div>
     </div>
   );

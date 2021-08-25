@@ -5,7 +5,8 @@
   height: 75vh;
   margin-top:50px;
   padding: 30px 50px 0;
-  border-bottom: 1px solid var(--highlight)
+  border-bottom: 1px solid var(--highlight);
+  width: 80vw;
 }
 
 #about-left {

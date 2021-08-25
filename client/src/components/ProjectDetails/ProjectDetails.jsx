@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./ProjectDetails.css";
 
 const ProjectDetails = ({ project }) => {
-  const { id, img, name, techstack, repo, site, description } = project;
+  const { img, name, techstack, repo, site, description } = project;
 
   return (
     <div className="project-details">

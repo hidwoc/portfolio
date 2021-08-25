@@ -12,7 +12,7 @@ const Skills = ({ skills }) => {
               .filter((skill) => skill.category === "Frontend")
               .map((skill) => (
                 <div key={skill.id} className="skill-icon">
-                  <img src={skill.icon} width="70" />
+                  <img src={skill.icon} alt={`${skill.name} icon`} width="70" />
                   <p>{skill.name}</p>
                 </div>
               ))}
@@ -25,7 +25,7 @@ const Skills = ({ skills }) => {
               .filter((skill) => skill.category === "Backend")
               .map((skill) => (
                 <div key={skill.id} className="skill-icon">
-                  <img src={skill.icon} width="70" />
+                  <img src={skill.icon} alt={`${skill.name} icon`} width="70" />
                   <p>{skill.name}</p>
                 </div>
               ))}
@@ -38,7 +38,7 @@ const Skills = ({ skills }) => {
             .filter((skill) => skill.category === "Other")
             .map((skill) => (
               <div key={skill.id} className="skill-icon">
-                <img src={skill.icon} width="70" />
+                <img src={skill.icon} alt={`${skill.name} icon`} width="70"/>
                 <p>{skill.name}</p>
               </div>
             ))}

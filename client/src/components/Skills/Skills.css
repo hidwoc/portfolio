@@ -27,27 +27,30 @@
   border-bottom: 1px solid var(--standard);
 }
 
-.fullstack-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 80%;
-}
-
 .fullstack-icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-end;
 }
 
 .other-icons {
-  grid-area: C;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-end;
 }
 
+.skill-icon {
+  margin: 10px;
+}
+
 .skill-icon img {
   margin: 15px;
+}
+
+@media screen and (max-width: 860px) {
+  #skills-div {
+    max-width: 85%;
+  }
 }
