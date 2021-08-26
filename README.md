@@ -6,7 +6,8 @@ _Personal portfolio website showcasing my software engineering projects, technic
 
 # Deployed Links
 
-https://portfolio-hidwoc.herokuapp.com/
+heidischoi.com
+API: https://portfolio-hidwoc.herokuapp.com/
 
 # MVP
 
@@ -79,10 +80,15 @@ src
 | Thu Aug 19 |             Plan & Create Wireframe             | Complete |
 | Fri Aug 20 | Set up Backend, Seed Data, Build React Skeleton | Complete |
 | Sat Aug 21 |              Render all components              | Complete |
-| Sun Aug 22 |           Successful CRUD on Frontend           | Incomplete |
+| Sun Aug 22 |           Successful CRUD on Frontend           | Complete |
 | Mon Aug 23 |         Deploy to Heroku & Netlfiy, CSS         | Complete |
 | Tue Aug 24 |                  Advanced CSS                   | Complete |
 | Wed Aug 25 |              Submit MVP Portfolio               | Complete |
+
+# PMVP
+
+- CSS Animations
+- Allow Admin to Create, Edit and Delete
 
 # Resources
 
