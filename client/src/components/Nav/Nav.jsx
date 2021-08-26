@@ -6,7 +6,7 @@ const Nav = ({ admin }) => {
   const adminOptions = <Link to="/inbox">Inbox</Link>;
 
   return (
-    <div id="nav-div">
+    <div id="nav">
       <div id="sticky-nav">
         <div id="logo">Heidi Choi</div>
         <nav>

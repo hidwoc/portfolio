@@ -13,7 +13,7 @@ const Contact = ({ resume, socials }) => {
           View Resume
         </Link>
         <div className="socials">
-          <a href={`mailto: ${email.link}`} target="_blank" key={email.id}>
+          <a href={`mailto: ${email.link}`} key={email.id}>
             <img
               id={email.id}
               src={email.icon}
